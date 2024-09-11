@@ -13,14 +13,14 @@ export const headerElementsList: HeaderElementsList = [
 
   {
     path: '/boothlist',
-    title: '부스 정보',
+    title: 'BOOTH',
   },
   {
-    path: '/timetalbe',
-    title: '공연 정보',
+    path: '/timetable',
+    title: 'TIMETABLE',
   },
   {
     path: '/about',
-    title: '제작자',
+    title: 'ABOUT',
   },
 ];
