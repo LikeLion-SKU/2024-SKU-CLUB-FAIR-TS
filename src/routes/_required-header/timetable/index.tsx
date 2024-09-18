@@ -7,7 +7,8 @@ export const Route = createFileRoute('/_required-header/timetable/')({
 
 function TimeTablePage() {
   return (
-    <main>
+    <main className="pb-[20px]">
+      <h1 className="text-center text-[36px] my-[50px]">MARCH 27</h1>
       <TimeTable />
     </main>
   );
