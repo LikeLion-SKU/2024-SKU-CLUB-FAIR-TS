@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
+
+// components
 import TimeTable from '../../../components/timetable/TimeTable';
 
 export const Route = createFileRoute('/_required-header/timetable/')({

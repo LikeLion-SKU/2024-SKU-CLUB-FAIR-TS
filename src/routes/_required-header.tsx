@@ -1,4 +1,6 @@
 import { createFileRoute, Outlet } from '@tanstack/react-router';
+
+// components
 import Header from '../components/common/header/Headrer';
 import { headerElementsList } from '../constant/headerElements';
 

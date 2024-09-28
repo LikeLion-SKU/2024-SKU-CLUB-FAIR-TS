@@ -1,3 +1,3 @@
-export default function getImageUrl(name: string) {
-  return new URL(`../assets/images/timetable/${name}.png`, import.meta.url).href;
+export default function getImageUrl(dirName: string, name: string, imageType: string) {
+  return new URL(`../assets/images/${dirName}/${name}.${imageType}`, import.meta.url).href;
 }
