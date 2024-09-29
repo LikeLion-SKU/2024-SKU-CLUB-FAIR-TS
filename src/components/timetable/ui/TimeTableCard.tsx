@@ -28,10 +28,18 @@ function TimeTableItem({ children }: TimeTableItemProps) {
   );
 }
 
-function TimeTableLogo({ imageName }: { imageName: string }) {
+function TimeTableLogo({
+  dirName,
+  imageName,
+  imageFormat,
+}: {
+  imageName: string;
+  dirName: string;
+  imageFormat: string;
+}) {
   return (
     <div className="w-[40px] h-[40px]">
-      <img src={getImageUrl(imageName)} alt="club-logo" className=" object-cover" />
+      <img src={getImageUrl(dirName, imageName, imageFormat)} alt="club-logo" className=" object-cover" />
     </div>
   );
 }

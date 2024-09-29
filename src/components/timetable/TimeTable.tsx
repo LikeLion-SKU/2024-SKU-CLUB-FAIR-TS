@@ -8,7 +8,7 @@ export default function TimeTable() {
         {timeTable.map((prod) => {
           return (
             <TimeTableCard.Item key={prod.id}>
-              <TimeTableCard.Logo imageName={prod.img} />
+              <TimeTableCard.Logo imageName={prod.img} dirName="timetable" imageFormat="png" />
               <TimeTableCard.TimeInfo time={prod.time} />
               <TimeTableCard.Content content={prod.content} />
             </TimeTableCard.Item>
