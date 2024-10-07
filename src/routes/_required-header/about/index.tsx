@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import ContriButor from '../../../components/about/ContributorContainer';
 
 import union from '../../../assets/images/about/unionlogo.png';
+
 export const Route = createFileRoute('/_required-header/about/')({
   component: () => <AboutPage />,
 });
