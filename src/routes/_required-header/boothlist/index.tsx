@@ -1,16 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
-import MapImage from '../../../components/boothlist/MapImage';
-import BoothList from '../../../components/boothlist/BoothList';
+import loadSuccess from '../../../api/loadSuccess';
 
 export const Route = createFileRoute('/_required-header/boothlist/')({
-  component: () => <BoothListPage />,
+  loader: () => loadSuccess(),
+  pendingComponent: () => <p>로딩중</p>,
 });
-
-function BoothListPage() {
-  return (
-    <div className="grid grid-flow-col grid-rows-2 h-[calc(100vh-50px)] ">
-      <MapImage />
-      <BoothList />
-    </div>
-  );
-}
